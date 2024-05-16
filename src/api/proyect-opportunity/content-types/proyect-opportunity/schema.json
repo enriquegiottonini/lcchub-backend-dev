@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "proyect_opportunities",
+  "info": {
+    "singularName": "proyect-opportunity",
+    "pluralName": "proyect-opportunities",
+    "displayName": "ProyectOpportunity",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "proyect_title": {
+      "type": "string",
+      "required": true
+    },
+    "company": {
+      "type": "string",
+      "required": true
+    },
+    "readmore_manual": {
+      "type": "richtext"
+    },
+    "readmore_img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "issued": {
+      "type": "date"
+    },
+    "readmore_redirect": {
+      "type": "string"
+    }
+  }
+}

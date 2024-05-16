@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "soy_lcc_videos",
+  "info": {
+    "singularName": "soy-lcc-video",
+    "pluralName": "soy-lcc-videos",
+    "displayName": "SoyLCCVideo"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "desc": {
+      "type": "text"
+    },
+    "thumbnail": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "redirect": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
