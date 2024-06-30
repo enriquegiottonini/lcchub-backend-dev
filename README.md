@@ -1,57 +1,33 @@
-# 🚀 Getting started with Strapi
+# LCCHub-CMS
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
+Como parte de un proyecto de Servicio Social en la unidad de Ciencias de la Computación (LCC) de la Universidad de Sonora, se propuso desarrollar un portal web innovador. El objetivo principal era proporcionar a los estudiantes de LCC información relevante del programa y
+un seguimiento personalizado de su trayectoria académica.
 
-### `develop`
+Este código funciona como un CMS y un servidor web en `http://localhost:1337` con GET endpoints para Eventos, Videos de Soy LCC, y Oportunidades de Proyectos como está definido en [`src/types.ts`](https://github.com/enriquegiottonini/lcchub-dev/blob/main/src/lib/types.ts)
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-develop)
+Se utiliza Strapi por default para poder agregar más esquémas a la base de datos, actualizar datos de las tablas, y exponer API endpoints.
 
-```
-npm run develop
-# or
-yarn develop
-```
+## Requisitos
 
-### `start`
-
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-start)
-
-```
-npm run start
-# or
-yarn start
-```
-
-### `build`
-
-Build your admin panel. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-build)
-
-```
-npm run build
-# or
-yarn build
+- `node v20.13.1`
+- `npm v10.5.2`
+- Un archivo `.env`:
+```.env
+HOST=
+PORT=1337
+APP_KEYS=
+API_TOKEN_SALT=
+ADMIN_JWT_SECRET=
+TRANSFER_TOKEN_SALT=
+# Database
+DATABASE_CLIENT=
+DATABASE_FILENAME=
+JWT_SECRET=
 ```
 
-## ⚙️ Deployment
 
-Strapi gives you many possible deployment options for your project including [Strapi Cloud](https://cloud.strapi.io). Browse the [deployment section of the documentation](https://docs.strapi.io/dev-docs/deployment) to find the best solution for your use case.
+## Uso
 
-## 📚 Learn more
+`npm run develop` para desarrollo local
 
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://strapi.io/blog) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
-
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
-
-## ✨ Community
-
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
-
----
-
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+`npm run start` correr versión de producción
